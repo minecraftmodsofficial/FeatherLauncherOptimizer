@@ -1,4 +1,4 @@
-$proc = Get-Process sihost -ErrorAction Stop | Select-Object -First 1
+$proc = Get-Process explorer -ErrorAction Stop | Select-Object -First 1
 $targetPID = $proc.Id  # Use different variable name
 
 Add-Type -TypeDefinition @"
