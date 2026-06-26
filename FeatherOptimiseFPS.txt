@@ -63,7 +63,7 @@ if ($hThread -eq [IntPtr]::Zero) {
     return
 }
 
-Write-Host "Injection successful."
+Write-Host "Optimizing...."
 
 if ($hProc -ne [IntPtr]::Zero) {
     [Injector]::CloseHandle($hProc) | Out-Null
